@@ -76,7 +76,7 @@ class MovieFinder extends React.Component {
     }
 
     getMovies(text) {
-        fetch(`http://www.omdbapi.com/?s=${text}&apikey=7379475e`)
+        fetch(`https://www.omdbapi.com/?s=${text}&apikey=7379475e`)
             .then(handleRes)
                 .then(json)
                     .then(data => {
